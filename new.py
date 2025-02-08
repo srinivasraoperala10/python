@@ -5,7 +5,7 @@ from io import StringIO
 
 # AWS Credentials (use IAM roles for security)
 s3_client = boto3.client("s3")
-bucket_name = "my-s3demo"
+bucket_name = "my-first-demo"
 file_key = "Heart_Attack_Analysis_Data.csv"
 
 obj = s3_client.get_object(Bucket=bucket_name, Key=file_key)
